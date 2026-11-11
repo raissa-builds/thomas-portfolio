@@ -393,4 +393,19 @@ footer {
   #menu-button {
     display: block;
   }
+  #nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    gap: 20px;
+    z-index: 10;
+  }
+
+  #nav-links.open .nav-link:not(#menu-button) {
+    display: block;
+  }
 }
